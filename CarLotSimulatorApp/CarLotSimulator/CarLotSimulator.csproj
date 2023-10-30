@@ -5,4 +5,38 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net6.0\CarLotSimulator.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net6.0\CarLotSimulator.deps.json" />
+    <Content Include="bin\Debug\net6.0\CarLotSimulator.runtimeconfig.json" />
+    <Content Include="obj\CarLotSimulator.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\net6.0\CarLotSimulator.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net6.0\CarLotSimulator.dll" />
+    <None Include="bin\Debug\net6.0\CarLotSimulator.exe" />
+    <None Include="bin\Debug\net6.0\CarLotSimulator.pdb" />
+    <None Include="CarLotSimulator.csproj" />
+    <None Include="obj\CarLotSimulator.csproj.nuget.g.props" />
+    <None Include="obj\CarLotSimulator.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net6.0\apphost.exe" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.assets.cache" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.dll" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net6.0\CarLotSimulator.pdb" />
+    <None Include="obj\Debug\net6.0\refint\CarLotSimulator.dll" />
+    <None Include="obj\Debug\net6.0\ref\CarLotSimulator.dll" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
 </Project>
