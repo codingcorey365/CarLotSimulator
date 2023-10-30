@@ -13,17 +13,15 @@ namespace CarLotSimulator // namespace
 
     public class CarLot // class
     {
-            //public List<string> carsOnLot = new List<string>();
+        public List<Car> CarsOnLot;// declaring a list
         
-        public CarLot() //constructor
-        {
-            // Is Blank....
-            //public List<string> carsOnLot = new List<string>();
-        }
-
-        public List<Car> CarsOnLot = new List<Car>(); // List made in the scope of class
-
         public static int NumberOfCarsOnLot { get; set; } // ???? calls the variable?
 
+        public CarLot() //constructor
+        {            
+            CarsOnLot = new List<Car>(); // List made in the scope of constructor
+        }
+
+        // look up custom getters! :D
     }
 }

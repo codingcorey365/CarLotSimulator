@@ -26,16 +26,20 @@ namespace CarLotSimulator
             //-------------------------------------------- calling with dot notation ---------------------------------
 
             var carLot1 = new CarLot();
+            var carLot2 = new CarLot();
 
-            var car1 = new Car();
+            var car1 = new Car
+            {
+                Year = 2009,
+                Make = "Ford",
+                Model = "Taurus",
+                EngineNoise = "Clunk",
+                HonkNoise = "Hooonk"
+            };
 
-            car1.Year = 2009;
-            car1.Make = "Ford";
-            car1.Model = "Taurus";
-            car1.EngineNoise = "Clunk";
-            car1.HonkNoise = "Hooonk";
+
             car1.MakeEngineNoise();
-            car1.MakeHonkNoise();            
+            car1.MakeHonkNoise();
             carLot1.CarsOnLot.Add(car1);
             Console.WriteLine(car1);
             //-------------------------------------------- Object Initializer Syntax ----------------------------------
@@ -47,7 +51,7 @@ namespace CarLotSimulator
             //car2.Model = "Challenger";
             car2.MakeEngineNoise();
             car2.MakeHonkNoise();
-            carLot1.CarsOnLot.Add(car2);
+            carLot2.CarsOnLot.Add(car2);
             Console.WriteLine(car2);
 
             //---------------------------------------------  custom constructor ---------------------------------------
@@ -59,19 +63,22 @@ namespace CarLotSimulator
             //car3.MakeEngineNoise();
             //car3.MakeHonkNoise();
             carLot1.CarsOnLot.Add(car3);
-            Console.WriteLine(car3);
+            foreach (Car lotCar in carLot1.CarsOnLot)
+            {
+                Console.WriteLine($"{lotCar.Make} {lotCar.Model} {lotCar.Year}");
+            }
+            //Console.WriteLine({car3.Make});
 
             Console.WriteLine("----------------------------The list of cars on lot 1---------------------------------------");
 
-            foreach (var item in carLot1.CarsOnLot)
-            {
-
-                Console.WriteLine(item);
-            }
+            //foreach (var item in carLot1.CarsOnLot)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             Console.WriteLine("Number of cars on lot");
-            Console.WriteLine($"{CarLot.NumberOfCarsOnLot}");
-
+           
+            
         }
     }
 }

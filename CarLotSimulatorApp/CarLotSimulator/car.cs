@@ -20,24 +20,21 @@ namespace CarLotSimulator //namespace
             CarLot.NumberOfCarsOnLot++;
         }
 
-        public Car(string engineNoise, string honkNoise)//custom constructor
+        public Car(string engineNoise, string honkNoise): this() //custom constructor
         {
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;// property and value
         }
 
-        public Car(int year, string make, string model)//custom constructor
+        public Car(int year, string make, string model): this() //custom constructor
         {
             Year = year;
             Make = make;
             Model = model;            
         }
 
-        public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)//custom constructor
-        {
-            Year = year;
-            Make = make;
-            Model = model;
+        public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable) : this(year, make, model) //custom constructor
+        {            
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
