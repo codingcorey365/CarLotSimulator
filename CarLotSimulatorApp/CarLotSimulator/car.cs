@@ -8,9 +8,10 @@ namespace CarLotSimulator
 {
     public class Car // class
     {
+        public static int numberOfCars { get; set; }
         public Car() // default constructor
-        {
-
+        {            
+            CarLot.numberOfCars++;
         }
 
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDrivable) // custom constructor
@@ -21,6 +22,7 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDrivable = isDrivable;
+            CarLot.numberOfCars++;
         }
 
         public int Year { get; set; }

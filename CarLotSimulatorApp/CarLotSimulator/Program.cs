@@ -29,6 +29,8 @@ namespace CarLotSimulator
             michaelsCar.EngineNoise = "Vroom";
             michaelsCar.HonkNoise = "Beep";
             michaelsCar.IsDrivable = true;
+            
+            //var test1 = new Car();
 
             // add michaelsCar to the carlot
             lotWithCars.listOfCars.Add(michaelsCar);
@@ -75,6 +77,10 @@ namespace CarLotSimulator
                 Console.WriteLine($" Year: {car.Year} Make: {car.Make} Model: {car.Model}");
             }
 
+            
+            Console.WriteLine(CarLot.numberOfCars);
+
+            
         }
     }
 }
